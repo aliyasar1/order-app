@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC0C097F-AB9D-48C5-9C41-4F08131EDE65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AllyGano</RootNamespace>
+    <AssemblyName>AllyGano</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriEkle.Designer.cs">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGuncelle.Designer.cs">
+      <DependentUpon>MusteriGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepet.Designer.cs">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SepetGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SepetGuncelle.Designer.cs">
+      <DependentUpon>SepetGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisMusteri.Designer.cs">
+      <DependentUpon>SiparisMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparisler.Designer.cs">
+      <DependentUpon>Siparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siparisTakibiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>siparisTakibiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunEkle.Designer.cs">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunGuncelle.Designer.cs">
+      <DependentUpon>UrunGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urunler.Designer.cs">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriEkle.resx">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGuncelle.resx">
+      <DependentUpon>MusteriGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sepet.resx">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SepetGuncelle.resx">
+      <DependentUpon>SepetGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisMusteri.resx">
+      <DependentUpon>SiparisMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparisler.resx">
+      <DependentUpon>Siparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunEkle.resx">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunGuncelle.resx">
+      <DependentUpon>UrunGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urunler.resx">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="siparisTakibiDataSet.xsc">
+      <DependentUpon>siparisTakibiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="siparisTakibiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>siparisTakibiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="siparisTakibiDataSet.xss">
+      <DependentUpon>siparisTakibiDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri-png-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriguncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musterisil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-magnifying-glass-computer-icons-magnifying-glass-desktop-wallpaper-magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siparis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urunekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urunguncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urunler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urunsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siparisekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siparisguncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siparissil.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
